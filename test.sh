@@ -1,7 +1,7 @@
 #!/bin/bash
 
-curr_dir=$pwd
-cd src/github.com/appscode/guard
+CURRENT_DIR=$(pwd)
+echo $CURRENT_DIR
+cd $GOPATH/src/github.com/appscode/guard
 go install -v
-cd $curr_dir
-go test -v ./... > test_result/message
+go test -v ./... > $CURRENT_DIR/test_result/message
