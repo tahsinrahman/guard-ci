@@ -3,4 +3,5 @@
 curr_dir=$pwd
 cd src/github.com/appscode/guard
 go install -v
-go test -v ./... > $curr_dir/test_result/message
+cd $curr_dir
+go test -v ./... > test_result/message
