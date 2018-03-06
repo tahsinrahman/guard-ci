@@ -1,9 +1,5 @@
 #!/bin/bash
 
-CURRENT_DIR=$(pwd)
-echo $CURRENT_DIR
-cd src/github.com/appscode/guard
-pwd
-ls
-go build
+go get github.com/appscode/guard
+go build -v
 go test -v ./... > $CURRENT_DIR/test_result/message
