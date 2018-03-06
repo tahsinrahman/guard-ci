@@ -1,6 +1,6 @@
 #!/bin/bash
 
 curr_dir=$pwd
-cd /go/src/github.com/appscode/guard
+cd src/github.com/appscode/guard
 go install -v
 go test -v ./... > curr_dir/test_result/message
